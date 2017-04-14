@@ -1,0 +1,30 @@
+1、git常用指令
+git branch 查看分支
+git checkout 切换分支
+gitmerge 合并分支
+git init/git clone 创建仓库
+git pull 下载代码及快速合并
+git push 上传代码及快速合并
+git push -tags上传所有标签
+git commit -m "" 只会提交添加到缓存区的文件
+git status 查看代码的状态
+git dif 查看代码修改内容
+git add 暂存需要提交的文件
+
+2、maven常用指令
+编译源代码： mvn compile
+编译测试代码：mvn test-compile 
+运行测试：mvn test   
+产生site：mvn site 
+打包 mvn package  
+在本地Repository中安装jar：mvn install        /  mvn install -DskipTests
+清除产生的项目：mvn clean   
+生成eclipse项目：mvn eclipse:eclipse 
+生成idea项目：mvn idea:idea 
+组合使用goal命令，如只打包不测试：mvn -Dtest package   
+只打jar包: mvn jar:jar  
+只测试而不编译，也不测试编译：mvn test -skipping compile -skipping test-compile 
+( -skipping 的灵活运用，当然也可以用于其他组合命令)  
+清除eclipse的一些系统设置:mvn eclipse:clean   
+
+ mvn install -DskipTests
